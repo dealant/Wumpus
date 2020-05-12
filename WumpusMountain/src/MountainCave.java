@@ -24,23 +24,23 @@ public class MountainCave {
     // The following are accessors for your Hunter
 
     public String getCaveName() {
-	return caveName;
+    	return caveName;
     }
 	
     public ArrayList getChildren() {
-	return children;
+    	return children;
     }
 	
     public String getCaveMessage() {
-	return caveMessage;
+    	return caveMessage;
     }
 
     public boolean hasScales() {
-	return hasWumpusScales;
+    	return hasWumpusScales;
     }
 
     public boolean isAdjacentToScales() {
-	return isAdjacentToScales;
+    	return isAdjacentToScales;
     }
 
 
