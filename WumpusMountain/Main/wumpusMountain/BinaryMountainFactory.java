@@ -1,3 +1,4 @@
+package wumpusMountain;
 /**
  * BinaryMoutainFactory
  * 	Creates a small tree with 0-2 children per node.

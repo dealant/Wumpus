@@ -1,3 +1,4 @@
+package wumpusMountain;
 import java.util.ArrayList;
 
 /*

@@ -1,3 +1,4 @@
+package wumpusMountain;
 /*
  * MountainFactory
  *

@@ -1,6 +1,6 @@
+package wumpusMountain;
 
 import java.util.*;
-import java.MountainCave.*;
 
 public class MyWumpusHunter extends WumpusHunter {
 	
