@@ -52,13 +52,12 @@ public class MountainCave {
      * a name and description. The other constructors are near the end
      * of the class.
      */
-    public MountainCave(MountainCave theParent, String name, String message)
-    {
-	this(name, message);
-	if( theParent != null) {
-	    parent = theParent;
-	    parent.addChild(this);
-	}
+    public MountainCave(MountainCave theParent, String name, String message){
+		this(name, message);
+		if( theParent != null) {
+		    parent = theParent;
+		    parent.addChild(this);
+		}
     }
 	
     public void setAdjacentToScales(boolean adjacentToScales) {

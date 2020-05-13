@@ -1,5 +1,6 @@
 
 import java.util.*;
+import java.MountainCave.*;
 
 public class MyWumpusHunter extends WumpusHunter {
 	
@@ -14,7 +15,10 @@ public class MyWumpusHunter extends WumpusHunter {
 	@Override
 	public void startAt(MountainCave root) {
 		Stack<String> caves = new Stack<>();
-		
+		while(!root.hasScales()) {
+			
+			caves.push()
+		}
 		// TODO create stack to store cave name and store in action log also
 		// TODO get cave name and search for adjacent cave name
 		// TODO check if scales are here
