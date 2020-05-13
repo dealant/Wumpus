@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 public class MyWumpusHunter extends WumpusHunter {
 	
 	public MyWumpusHunter() {
@@ -11,7 +13,8 @@ public class MyWumpusHunter extends WumpusHunter {
 	
 	@Override
 	public void startAt(MountainCave root) {
-		// TODO Auto-generated method stub
+		Stack<String> caves = new Stack<>();
+		
 		// TODO create stack to store cave name and store in action log also
 		// TODO get cave name and search for adjacent cave name
 		// TODO check if scales are here
