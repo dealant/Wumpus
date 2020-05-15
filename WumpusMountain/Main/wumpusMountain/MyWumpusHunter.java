@@ -15,9 +15,16 @@ public class MyWumpusHunter extends WumpusHunter {
 	@Override
 	public void startAt(MountainCave root) {
 		Stack<String> caves = new Stack<>();
+		String location = "";
 		while(!root.hasScales()) {
-			
-			caves.push()
+			location = root.getCaveName();
+			caves.push(location);
+			this.actionLog += "Enterting the" + location + "/n";
+			ArrayList<MountainCave> paths = root.getChildren();
+			if(paths.size()>0) {
+				root = paths.get(0);
+			}
+			paths.clear();
 		}
 		// TODO create stack to store cave name and store in action log also
 		// TODO get cave name and search for adjacent cave name

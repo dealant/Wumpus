@@ -22,7 +22,7 @@ public class WMDriver {
 	/*
 	 * TODO1: Change the one line below to build one of your WumpusHunters
 	 */		
-	WumpusHunter myHunter = new StackBasedWumpusHunter();
+	WumpusHunter myHunter = new MyWumpusHunter();
 		
 	BinaryMountainFactory caveFactory = new BinaryMountainFactory();
 	//TrinaryMountainFactory caveFactory = new TrinaryMountainFactory();
