@@ -54,8 +54,7 @@ public class MyWumpusHunter extends WumpusHunter {
 		//reverse stack for first in first out output
 		Stack<String> direct_path = new Stack<>();
 		while(!caves.isEmpty()) {
-			String current = caves.pop();
-			direct_path.push(current);
+			direct_path.push(caves.pop());
 		}
 		//print beginning path message
 		this.actionLog += "Start at the " + direct_path.pop();
@@ -63,7 +62,6 @@ public class MyWumpusHunter extends WumpusHunter {
 		while(!direct_path.isEmpty()) {
 			this.actionLog += " and\nthen visit the " + direct_path.pop();
 		}
-		
 	}
 	
 
