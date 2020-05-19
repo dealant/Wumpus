@@ -25,8 +25,8 @@ public class WMDriver {
 	WumpusHunter myHunter = new MyWumpusHunter();
 		
 	//BinaryMountainFactory caveFactory = new BinaryMountainFactory();
-	TrinaryMountainFactory caveFactory = new TrinaryMountainFactory();
-	//YourMountainFactory caveFactory = new YourMountainFactory();  //only one method to do!
+	//TrinaryMountainFactory caveFactory = new TrinaryMountainFactory();
+	MyMountainFactory caveFactory = new MyMountainFactory();  //only one method to do!
 		
 	//get the top of the mountain, which is the top of our tree
 	MountainCave theBeginning = caveFactory.getMountainTop();
