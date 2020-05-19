@@ -1,5 +1,8 @@
 package wumpusMountain;
+/*
+MyMountainFactory
 
+*/
 public class MyMountainFactory extends MountainFactory {
 
 	@Override
@@ -92,10 +95,10 @@ public class MyMountainFactory extends MountainFactory {
 				"There is some cool stuff here but no scales");
 		//		branch db
 		MountainCave dba = new MountainCave(db, "Giant Skull Left", 
-				"Past the path there's fork, to the left");
+				"Past the path there's a fork, to the left fork it's a dead end. Wait, there seems to be a false wall.");
 		MountainCave dbb = new MountainCave(db, "Giant Skull Right", 
-				"looks really creepy, looks like a path was meant to go into it though");
-
+				"Pass the the path there's a fork, to the right is a sleeping Chimera, let's turn around"); //end branch
+		dba.setAdjacentToScales(true);
 		//		branch dc ends here
 		
 		//layer 4
@@ -115,6 +118,10 @@ public class MyMountainFactory extends MountainFactory {
 		MountainCave bbdc = new MountainCave(bbd, "Outcast Hut", 
 				"That hut has been empty for years, I wonder why the outcast was expelled");//end branch
 		bbdb.setAdjacentToScales(true);
+		//branch dba
+		MountainCave dbaa = new MountainCave(dba, "Treasure room", 
+				"Breaking past the false wall there was a treasure room, found some scales!");
+		dbaa.setHasScales(true);
 		//layer 5
 		MountainCave bbdba = new MountainCave(bbdb, "Trampled Patch", 
 				"Finally found some scales!!!!!");
